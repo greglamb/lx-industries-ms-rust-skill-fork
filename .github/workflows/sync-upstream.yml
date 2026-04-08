@@ -28,15 +28,6 @@ on:
         description: "Destination directory for renamed workflows (rename mode only)"
         required: false
         default: ".github/workflows-upstream"
-      create_pr:
-        description: "Auto-create PR from sync branch into pr_base"
-        required: false
-        type: boolean
-        default: true
-      pr_base:
-        description: "Base branch for auto-created PR"
-        required: false
-        default: "main"
   
 permissions:
   contents: write
@@ -51,6 +42,4 @@ jobs:
       target_ref: ${{ inputs.target_ref || 'upstream-sync' }}
       disable_workflows: ${{ inputs.disable_workflows || 'rename' }}
       rename_dir: ${{ inputs.rename_dir || '.github/workflows-upstream' }}
-      create_pr: ${{ inputs.create_pr == '' && true || inputs.create_pr }}
-      pr_base: ${{ inputs.pr_base || 'main' }}
 
