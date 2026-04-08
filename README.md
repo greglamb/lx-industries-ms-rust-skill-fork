@@ -4,6 +4,14 @@ Microsoft's [Pragmatic Rust Guidelines](https://microsoft.github.io/rust-guideli
 
 Automatically enforces Microsoft-style Rust development discipline on every `.rs` file the agent touches. Compatible with any agent that supports the [Agent Skills](https://agentskills.io/) open standard (Claude Code, Cursor, Gemini CLI, and others).
 
+## Mirror Fork Note
+
+You can install from this repository via:
+
+```bash
+npx skills add https://github.com/greglamb/lx-industries-ms-rust-skill-fork -a claude-code -s ms-rust -y
+```
+
 ## Setup
 
 Requires [uv](https://docs.astral.sh/uv/) and Python 3.12+.
