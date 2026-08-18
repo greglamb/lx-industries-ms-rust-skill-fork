@@ -78,4 +78,4 @@ Use when designing user-friendly library APIs, managing error types, creating ru
 2. Apply the required rules from the relevant guidelines.
 3. Apply the M-CANONICAL-DOCS documentation format (summary sentence < 15 words, then extended docs, Examples, Errors, Panics, Safety, Abort sections as applicable).
 4. Comments must ALWAYS be written in American English, unless the user explicitly requests a different language.
-5. If the file is fully compliant, add a comment: `// Rust guideline compliant 2026-02-21`
+5. If the file is fully compliant, add the comment `// Rust guideline compliant 2026-02-21` at the top of the file, immediately before the first `use` or item. Place it below any license/copyright header and any module-level `//!` doc comment, separated from the preamble and the code by a blank line. When the file has no preamble, the comment is line 1.
